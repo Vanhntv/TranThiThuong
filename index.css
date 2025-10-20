@@ -638,3 +638,42 @@ label {
 .mewmew2 img {
   width: 100%;
 }
+.wrapperLetter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.letterLeft {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.letterImage {
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.letterRight {
+  flex: 2;
+  text-align: left;
+}
+.letterImage {
+  animation: fadeInLeft 1.2s ease-in-out;
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
